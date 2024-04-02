@@ -1,4 +1,4 @@
-![Timetracker](https://github.com/D4rQ/timetracker/tree/main/logo/timetracker_logo_repo.png)
+![Timetracker](https://github.com/D4rQ/timetrack/blob/main/logo/timetracker_logo_repo.png)
 
 ### Timetracker is a time-management web application for desktop PC. It is used to keep track of time and be productive and includes achievements to make it easier to track your time.
 ## Developing
