@@ -5,4 +5,4 @@
 ### Built with 
 C# 12.0, ASP.NET MVC 8.0, HTML, CSS, JS
 ## Licensing
-[MIT-License](https://github.com/D4rQ/timetracker/blob/main/LICENSE)
+[MIT-License](https://github.com/D4rQ/timetrack/blob/main/LICENSE)
