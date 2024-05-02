@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\buildMultiTargeting\timetracker.props" />
+  <Import Project="..\buildMultiTargeting\Timetracker.props" />
 </Project>
