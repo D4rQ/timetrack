@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lilita+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Task table.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+
+       
+            <div class="header-line">
+
+            
+                <div class="nav">
+                    <a class="header_text" href="@">Имя Пользователя</a>
+                    <a class="user_pic" href="@"><img src="Task_Table_Graphic_Files/user_pic.png" alt=""></a>
+                    <!-- <btn><a href="#">Зарегистрироваться</a></btn> -->
+                 </div>
+
+                
+            </div>
+
+        </div>
+    </div>
+
+    <div class="task_add">
+       
+        <a class="task_text" href = "#" onclick="addTask()">Добавление задачи</a>
+        <a class="task_pic" href="@"><img src="Task_Table_Graphic_Files/plus.png" alt=""></a>
+    </div>
+
+
+    <div class="slidebar">
+        <ul>
+            
+            <li class= "logo">
+                <a href="#">
+                    <span class= "icon"><div class="logo"><img src="Task_Table_Graphic_Files/timer.png" alt=""></div></span>
+                    <div class="logo_text">Timetracker</div>   
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class= "icon"><img src="Task_Table_Graphic_Files/menu_icon.png" alt=""></span>
+                    <span class= "text">Главная Страница</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class= "icon"><img src="Task_Table_Graphic_Files/task.png" alt=""></span>
+                    <span class= "text">Список задач</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class= "icon"><img src="Task_Table_Graphic_Files/calendar.png" alt=""></span>
+                    <span class= "text">События</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class= "icon"><img src="Task_Table_Graphic_Files/medal.png" alt=""></span>
+                    <span class= "text">Награды</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class= "icon"><img src="Task_Table_Graphic_Files/backpack.png" alt=""></span>
+                    <span class= "text">Инвентарь</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class= "icon"><img src="Task_Table_Graphic_Files/settings.png" alt=""></span>
+                    <span class= "text">Настройки</span>
+                </a>
+            </li>
+            <div class="bottom">
+                <li>
+                    <a href="#">
+                        <span class= "icon"><img src="Task_Table_Graphic_Files/exit.png" alt=""></span>
+                        <span class= "text">Выйти</span>
+                    </a>
+                </li>
+            </div>
+            
+        </ul>
+    </div>
+
+
+    <section>
+        <div class="table-container">
+            <div class="task-table">
+                <table id="tasks">
+                    <thead>
+                        <tr>
+                            <td>Название</td>
+                            <td>Уровень значимости</td>
+                            <td>Дедлайн</td>
+                            <td>Выполнение</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="Task table script.js"></script>
+</body>
+</html>
