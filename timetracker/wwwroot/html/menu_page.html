@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lilita+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+
+       
+            <div class="header-line">
+
+            
+                <div class="nav">
+                    <a class="header_text" href="#">Имя Пользователя</a>
+                    <a class="user_pic" href="#"><img src="Graphic_Files/user_pic.png" alt=""></a>
+                    <!-- <btn><a href="#">Зарегистрироваться</a></btn> -->
+                 </div>
+
+                
+            </div>
+
+        </div>
+    </div>
+
+    <div class="task_add">
+        <a class="task_text" href = "#" >Добавление задачи</a>
+        <a class="task_pic" href="#"><img src="Graphic_Files/plus.png" alt=""></a>
+    </div>
+
+
+    <div class="slidebar">
+        <ul>
+            
+            <li class= "logo">
+                <a href="#">
+                    <span class= "icon"><div class="logo"><img src="Graphic_Files/timer.png" alt=""></div></span>
+                    <div class="logo_text">Timetracker</div>   
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class= "icon"><img src="Graphic_Files/menu_icon.png" alt=""></span>
+                    <span class= "text">Главная Страница</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class= "icon"><img src="Graphic_Files/task.png" alt=""></span>
+                    <span class= "text">Список задач</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class= "icon"><img src="Graphic_Files/calendar.png" alt=""></span>
+                    <span class= "text">События</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class= "icon"><img src="Graphic_Files/medal.png" alt=""></span>
+                    <span class= "text">Награды</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class= "icon"><img src="Graphic_Files/backpack.png" alt=""></span>
+                    <span class= "text">Инвентарь</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class= "icon"><img src="Graphic_Files/settings.png" alt=""></span>
+                    <span class= "text">Настройки</span>
+                </a>
+            </li>
+            <div class="bottom">
+                <li>
+                    <a href="#">
+                        <span class= "icon"><img src="Graphic_Files/exit.png" alt=""></span>
+                        <span class= "text">Выйти</span>
+                    </a>
+                </li>
+            </div>
+            
+        </ul>
+    </div>
+
+
+    <section>
+        <div class="timer_container">
+            <!-- <h1>Начните работать уже сейчас</h1> -->
+            <div class="painel">
+                <p id="work" >работа</p>
+                <p id="break">отдых</p>
+            </div>
+
+            <div class="timer">
+                <div class="circle">
+                    <div class="time">
+                        <p id="minutes"></p>
+                        <p>:</p>
+                        <p id="seconds"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start" onclick="start()"><img src="Graphic_Files/play.png" alt=""></button>
+                <button id="reset" onclick="reset()"><img src="Graphic_Files/reset.png" alt=""></button>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
