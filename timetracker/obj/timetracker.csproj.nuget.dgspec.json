@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lagod\\source\\repos\\Timetracker\\Timetracker.csproj": {}
+    "C:\\Users\\User\\source\\repos\\timetrack\\timetracker\\Timetracker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lagod\\source\\repos\\Timetracker\\Timetracker.csproj": {
+    "C:\\Users\\User\\source\\repos\\timetrack\\timetracker\\Timetracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lagod\\source\\repos\\Timetracker\\Timetracker.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\timetrack\\timetracker\\Timetracker.csproj",
         "projectName": "Timetracker",
-        "projectPath": "C:\\Users\\lagod\\source\\repos\\Timetracker\\Timetracker.csproj",
-        "packagesPath": "C:\\Users\\lagod\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lagod\\source\\repos\\Timetracker\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\timetrack\\timetracker\\Timetracker.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\timetrack\\timetracker\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\lagod\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org/": {}
         },
         "frameworks": {
           "net8.0": {
@@ -87,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

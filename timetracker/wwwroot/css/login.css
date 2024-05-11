@@ -58,6 +58,12 @@ input{
     color:black;
 }
 
+
+
+input:hover {
+    background-color: rgba(161, 195, 167, 0.25);
+}
+
 input[id="password"]{
     background-image: url('/images/lock_icon.svg');
     background-repeat: no-repeat;
