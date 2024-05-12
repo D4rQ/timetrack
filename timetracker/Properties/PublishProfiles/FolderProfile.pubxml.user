@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\lagod\source\repos\timetrack\timetracker\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2024-05-12T12:39:59.6757372Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="default">
+      <Value>workstation id=timetracker.mssql.somee.com%3bpacket size=4096%3buser id=D4rQ_SQLLogin_1%3bpwd=9izweotsjl%3bdata source=timetracker.mssql.somee.com%3bpersist security info=False%3binitial catalog=timetracker%3bTrustServerCertificate=True</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
