@@ -3,39 +3,46 @@
 
 @{
     ViewData["Title"] = "Register";
+    Layout = null;
 }
 
-<div class="row d-flex align-items-center justify-content-center">
-    <div class="col-md-4 card p-3">
-        <h2 class="text-center text-info">Register</h2>
-        <form asp-action="Register" method="post" asp-route-returnurl="@ViewData["ReturnUrl"]">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="mb-1">
-                <label asp-for="Username" class="control-label"></label>
-                <input asp-for="Username" class="form-control" />
-                <span asp-validation-for="Username" class="text-danger"></span>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация на TimeTracker</title>
+    <link rel="stylesheet" href="~/css/registration.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="registration-form">
+            <div class="logo">
+                <img src="/images/timetracker_logo.png" alt="TimeTracker Logo">
             </div>
-            <div class="mb-1">
-                <label asp-for="Password" class="control-label"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div>
-            <div class="mb-1">
-                <label asp-for="ConfirmPassword" class="control-label"></label>
-                <input asp-for="ConfirmPassword" class="form-control" />
-                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-            </div>
-            <div class="row">
-                <div class="col-8">
-                    <a asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" class="text-decoration-none float-start mt-2">Have account?</a>
+            <h1>Регистрация</h1>
+            <form asp-action="Register" method="post" asp-route-returnurl="@ViewData[" ReturnUrl"]">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="inputbox">                  
+                    <input asp-for="Username"  id="email" placeholder="Имя пользователя" required>
+                    <span asp-validation-for="Username" class="text-danger"></span>
                 </div>
-                <div class="col-4">
-                    <input type="submit" value="Register" class="btn btn-primary btn-sm float-end" />
+                <div class="inputbox">
+                    <input asp-for="Password" type="password" id="password" placeholder="Пароль" required>
+                    <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
-            </div>
-        </form>
+                <div class="inputbox">
+                    <input asp-for="ConfirmPassword" type="password" id="password-repeat" placeholder="Повторите пароль" required>
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+                <div class="inputbox">
+                    <button type="submit">Зарегистрироваться</button>
+                </div>
+                <p class="login-link">Есть аккаунт? <a asp-action="Login" asp-route-returnurl="@ViewData[" ReturnUrl"]">Войти</a></p>
+            </form>
+        </div>
     </div>
-</div>
+</body>
+</html>
 
 
 @section Scripts {
