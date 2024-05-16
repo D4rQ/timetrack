@@ -19,7 +19,6 @@
             <div class="logo">
                 <img src="/images/timetracker_logo.png" alt="TimeTracker Logo">
             </div>
-            <h1>Регистрация</h1>
             <form asp-action="Register" method="post" asp-route-returnurl="@ViewData[" ReturnUrl"]">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="inputbox">                  
@@ -35,7 +34,7 @@
                     <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                 </div>
                 <div class="inputbox">
-                    <button type="submit">Зарегистрироваться</button>
+                    <input type="submit" value="Зарегистрироваться"/>
                 </div>
                 <p class="login-link">Есть аккаунт? <a asp-action="Login" asp-route-returnurl="@ViewData[" ReturnUrl"]">Войти</a></p>
             </form>

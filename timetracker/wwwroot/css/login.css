@@ -111,4 +111,6 @@ a {
     text-decoration: none;
 }
 
-workstation id=timetracker.mssql.somee.com;packet size=4096;user id=D4rQ_SQLLogin_1;pwd=9izweotsjl;data source=timetracker.mssql.somee.com;persist security info=False;initial catalog=timetracker;TrustServerCertificate=True
+center {
+    display: none;
+}

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Moibaty\\source\\repos\\project\\timetrack\\timetracker\\Timetracker.csproj": {}
+    "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\Timetracker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Moibaty\\source\\repos\\project\\timetrack\\timetracker\\Timetracker.csproj": {
+    "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\Timetracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Moibaty\\source\\repos\\project\\timetrack\\timetracker\\Timetracker.csproj",
+        "projectUniqueName": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\Timetracker.csproj",
         "projectName": "Timetracker",
-        "projectPath": "C:\\Users\\Moibaty\\source\\repos\\project\\timetrack\\timetracker\\Timetracker.csproj",
-        "packagesPath": "C:\\Users\\Moibaty\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Moibaty\\source\\repos\\project\\timetrack\\timetracker\\obj\\",
+        "projectPath": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\Timetracker.csproj",
+        "packagesPath": "C:\\Users\\lagod\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Moibaty\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lagod\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

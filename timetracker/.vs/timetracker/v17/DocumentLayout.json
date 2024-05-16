@@ -1,18 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Moibaty\\source\\repos\\project\\timetrack\\timetracker\\",
+  "WorkspaceRootPath": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8258AB47-B3E8-43ED-8F1C-C15E855B8FA1}|Timetracker.csproj|c:\\users\\moibaty\\source\\repos\\project\\timetrack\\timetracker\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{8258AB47-B3E8-43ED-8F1C-C15E855B8FA1}|Timetracker.csproj|c:\\users\\lagod\\projects\\timetrack\\timetracker\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8258AB47-B3E8-43ED-8F1C-C15E855B8FA1}|Timetracker.csproj|solutionrelative:wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8258AB47-B3E8-43ED-8F1C-C15E855B8FA1}|Timetracker.csproj|c:\\users\\lagod\\projects\\timetrack\\timetracker\\wwwroot\\css\\registration.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8258AB47-B3E8-43ED-8F1C-C15E855B8FA1}|Timetracker.csproj|solutionrelative:wwwroot\\css\\registration.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8258AB47-B3E8-43ED-8F1C-C15E855B8FA1}|Timetracker.csproj|C:\\Users\\lagod\\projects\\timetrack\\timetracker\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8258AB47-B3E8-43ED-8F1C-C15E855B8FA1}|Timetracker.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8258AB47-B3E8-43ED-8F1C-C15E855B8FA1}|Timetracker.csproj|c:\\users\\lagod\\projects\\timetrack\\timetracker\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8258AB47-B3E8-43ED-8F1C-C15E855B8FA1}|Timetracker.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8258AB47-B3E8-43ED-8F1C-C15E855B8FA1}|Timetracker.csproj|c:\\users\\moibaty\\source\\repos\\project\\timetrack\\timetracker\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8258AB47-B3E8-43ED-8F1C-C15E855B8FA1}|Timetracker.csproj|C:\\Users\\lagod\\projects\\timetrack\\timetracker\\viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8258AB47-B3E8-43ED-8F1C-C15E855B8FA1}|Timetracker.csproj|solutionrelative:viewmodels\\registervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8258AB47-B3E8-43ED-8F1C-C15E855B8FA1}|Timetracker.csproj|c:\\users\\moibaty\\source\\repos\\project\\timetrack\\timetracker\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8258AB47-B3E8-43ED-8F1C-C15E855B8FA1}|Timetracker.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8258AB47-B3E8-43ED-8F1C-C15E855B8FA1}|Timetracker.csproj|c:\\users\\lagod\\projects\\timetrack\\timetracker\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8258AB47-B3E8-43ED-8F1C-C15E855B8FA1}|Timetracker.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,38 +41,83 @@
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f5cd1b51-c771-5648-966f-646d419b1e7c}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "registration.css",
+              "DocumentMoniker": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\wwwroot\\css\\registration.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\registration.css",
+              "ToolTip": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\wwwroot\\css\\registration.css*",
+              "RelativeToolTip": "wwwroot\\css\\registration.css*",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAGsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-16T14:17:58.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "login.css",
+              "DocumentMoniker": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\wwwroot\\css\\login.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\login.css",
+              "ToolTip": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\wwwroot\\css\\login.css*",
+              "RelativeToolTip": "wwwroot\\css\\login.css*",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAHMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-16T14:17:58.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T14:16:15.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "RegisterVM.cs",
-              "DocumentMoniker": "C:\\Users\\Moibaty\\source\\repos\\project\\timetrack\\timetracker\\ViewModels\\RegisterVM.cs",
+              "DocumentMoniker": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\ViewModels\\RegisterVM.cs",
               "RelativeDocumentMoniker": "ViewModels\\RegisterVM.cs",
-              "ToolTip": "C:\\Users\\Moibaty\\source\\repos\\project\\timetrack\\timetracker\\ViewModels\\RegisterVM.cs",
+              "ToolTip": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\ViewModels\\RegisterVM.cs",
               "RelativeToolTip": "ViewModels\\RegisterVM.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T13:40:17.934Z"
+              "WhenOpened": "2024-05-12T13:40:17.934Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Moibaty\\source\\repos\\project\\timetrack\\timetracker\\Views\\Account\\Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Moibaty\\source\\repos\\project\\timetrack\\timetracker\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "Views\\Account\\Login.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAAUAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-12T13:32:48.518Z"
+              "WhenOpened": "2024-05-12T13:32:48.518Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Moibaty\\source\\repos\\project\\timetrack\\timetracker\\Views\\Account\\Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Moibaty\\source\\repos\\project\\timetrack\\timetracker\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\Views\\Account\\Register.cshtml",
               "RelativeToolTip": "Views\\Account\\Register.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAB8AAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-02T17:24:57.105Z",
               "EditorCaption": ""
