@@ -1,4 +1,5 @@
 function addTask(){
+    closePopup();
     var table = document.getElementById("tasks").getElementsByTagName('tbody')[0];
 
     var date = new Date();
@@ -12,15 +13,15 @@ function addTask(){
     var cell4 = newRow.insertCell(3);
   
     // Добавляем текст в ячейки
-    cell1.innerHTML = "Task" + table.rows.length;
-    cell2.innerHTML =  table.rows.length;
-    cell3.innerHTML =  date.getFullYear() + ' - ' + (date.getMonth() + 1) + ' - ' + date.getDate();
+    cell1.innerHTML = document.getElementById('task-name').value;
+    cell2.innerHTML =  document.getElementById('task-importance').value;
+    cell3.innerHTML =  document.getElementById('task-deadline').value;
 
     //кнопка тест
    // Добавляем кнопку удаления в ячейку
     var completeButton = document.createElement("button");
     var img = document.createElement("img");
-    img.src = "Task_Table_Graphic_Files/check.png"; // Указываем путь к вашему изображению
+    img.src = "Graphic_Files/check.png"; // Указываем путь к вашему изображению
     img.alt = "Complete";
     img.id = "tick";
     completeButton.appendChild(img);
@@ -31,7 +32,16 @@ function addTask(){
     };
     cell4.appendChild(completeButton);
     cell4.id = "complete-column";
-
-
-
 }
+
+
+function openPopup(){
+    document.getElementById('popup').style.display = 'block';
+}
+
+function closePopup(){
+    document.getElementById('popup').style.display = 'none';
+}
+
+
+
