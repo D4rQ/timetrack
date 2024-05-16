@@ -7,7 +7,9 @@ body{
     background-position:left bottom;
 
 }
-
+center{
+   display:none;
+}
 
 .header-line{
     display: flex;
@@ -41,16 +43,20 @@ body{
     height: 200px;
     width: 370px;
     display:block;
-    margin-left: 830px;
+    padding-left: 115px;
+    /* margin-right:50px;
+    margin-left: 830px; */
     
     
 
  }
  .right-box{
+   position:absolute;
     margin-top: 80px;
-    
-    margin-right: auto;
+    right:0;
+    margin-right: 10vh;
     margin-bottom: 500px;
+    text-align: center;
     
  }
  .text{
@@ -64,21 +70,24 @@ body{
     font-size: 27px;
     font-family: Jost;
     line-height: 25px;
-    margin-right: 130px;
-    margin-left: 830px;
+    /* margin-right: 130px;
+    margin-left: 830px; */
  }
 
  .mid-text{
     font-size: 20px;
     line-height: 25px;
     font-family: Jost;
-    width: 550px;
-    margin-left: 750px;
+   width: 550px;
+    /* margin-right: 70px;
+    margin-left: 750px; */
 
  }
 
  .button2{
-    margin-left: 960px;
+    /* right: 400px; */
+    /* margin-left: 965px; */
+    
     margin-top: 15px;
     background-color:rgba(196, 216, 200, 1);
     color:black;
