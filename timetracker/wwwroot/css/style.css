@@ -142,20 +142,20 @@ background: rgba(187, 206, 191, 1);
     margin-right: 10px;
 }
 
-.timer_container{
+/* .timer_container{
     position: absolute;
     margin-bottom: 52%;
-
+    z-index: 1;
     left: 38%;
     /* по вид */
-    width: min(42.5 rem,100%);
+    /* width: min(42.5 rem,100%);
     margin-inline:auto;
     padding-inline:2rem;
     display: flex;
     justify-content: center;
     align-items:center;
     flex-direction: column;
-}
+} */ 
 :root{
     font-size: 70%;
 
@@ -170,108 +170,187 @@ background: rgba(187, 206, 191, 1);
     box-sizing:border-box;
     
 }
-.timer_container p{
+
+
+
+.timer_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+.timer_container p {
     font-size: 17px;
     font-weight: 500;
 }
-i{
+
+i {
     font-size: 3.2rem;
 }
+
 /* начните работать уже сейчас */
-h1{ 
+h1 { 
     font-size: 2.5rem;
     font-weight: 400;
 }
-section{
-    display:flex;
-    align-items:center;
-    height:100%;
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:0;
+    
 }
-.painel{
+
+.timer_container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-32rem);
+}
+
+.painel {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
-    width:20rem;
-    margin-block:5rem;
-    padding:1.5rem;
-    border-radius:10rem;
+    width: 20rem;
+    margin-block: 5rem;
+    padding: 1.5rem;
+    border-radius: 10rem;
     -webkit-box-shadow: 0px 0px 15px 10px var(--color-shadow); 
     box-shadow: 0px 0px 5px 10px var(--color-shadow);
 }
 
-.painel p{
+.painel p {
     opacity: .8;
-    transition: 1s ease-in;;
+    transition: 1s ease-in;
 }
 
-.painel p.active{
+.painel p.active {
     opacity: 1;
-    color: rgba(251, 177, 36, 1);
-    
-    
-    
+    color: rgba(251, 177, 36, 1);   
 } 
 
-.timer{
+.timer {
     display: flex;
     justify-content: center;
-    align-items:center;
-    width:23rem;
+    align-items: center;
+    width: 23rem;
     height: 23rem;
-    border-radius:50%;
+    border-radius: 50%;
     -webkit-box-shadow: 0px 0px 15px 10px var(--color-shadow); 
     box-shadow: 0px 0px 5px 10px var(--color-shadow);
 }
 
-.circle{
-    display:flex;
+.circle {
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     width: 21rem;
     height: 21rem;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: rgba(251, 177, 36, 0.5);
     position: relative;
 }
 
-.circle::before{
-    content:'';
+.circle::before {
+    content: '';
     position: absolute;
     width: 95%;
     height: 95%;
-    border-radius:50%;
+    border-radius: 50%;
     background-color: rgba(251, 251, 247, 1);
 }
-.time{
+
+.time {
     position: relative;
     display: flex;
     flex-direction: row;
 }
-.time p{
+
+.time p {
     font-size: 5rem;
 }
 
-.time p:nth-of-type(2){
+.time p:nth-of-type(2) {
     position: relative;
     top: -.5rem;
-    margin-inline:1rem;
+    margin-inline: 1rem;
 }
 
-.controls{
+.controls {
     margin-top: 2rem;
-    
-    
 }
-.controls button{
+
+.controls button {
     border: none;
-    background-color:transparent;
+    background-color: transparent;
     cursor: pointer;
-    
 }
-.controls img{
+
+.controls img {
     width: 4rem;
     height: 4rem;
 }
-.controls #reset{
+
+.controls #reset {
     display: none;
+}
+
+
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d2e8e6;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.input-group label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.input-group input[type="text"] {
+    width: 80px; /* Уменьшенная ширина */
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+.container_input {
+    display: flex;
+    position: absolute; /* Меняем на absolute для позиционирования относительно окна браузера */
+    top: 85%;        /* Позиция по вертикали на 50% от начала окна */
+    left: 50%;       /* Позиция по горизонтали на 50% от начала окна */
+    transform: translate(-50%, -50%);
+    gap: 210px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(196, 216, 200, 1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.input-group label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.input-group input[type="text"] {
+    width: 70px; /* Уменьшенная ширина */
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
 }
