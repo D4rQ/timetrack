@@ -1,0 +1,372 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    min-height: 100vh; 
+    margin:0;
+    background-image: url(Graphic_Files/background.png);
+    
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:center; 
+
+
+}
+.slidebar{
+    position: relative;
+    width: 60px;
+    height: 100vh;
+    background: rgba(196, 216, 200, 1);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.slidebar:hover{
+    width: 300px;
+}
+.slidebar ul{
+    position: relative;
+    height: 100vh;
+}
+
+.slidebar ul li{
+    list-style: none;
+}
+
+.slidebar ul li:hover{
+background: rgba(187, 206, 191, 1);
+}
+.slidebar ul li a{
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.slidebar ul li a .icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    color:black;
+}
+.slidebar ul li a .text{
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items:center;
+    font-size: 1em;
+    color:black;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.logo_text{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 500;
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items:center;
+    font-size: 1.5em;
+    color:black;
+    letter-spacing: 0.05em;
+    /* margin-bottom: 50px; */
+}
+.slidebar ul li.logo:hover{
+    background: rgba(196, 216, 200, 1);
+}
+
+.slidebar ul li.logo{
+    margin-bottom: 40px;
+}
+.bottom{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+
+}
+.task_add{
+    margin-top: 150px;
+    display: flex;
+    align-items:center; 
+    justify-content: center;
+    width: 50%;
+    margin-left: 25%;
+    position: absolute;
+    background-color: rgba(196, 216, 200, 1);
+    padding: 9px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.task_text{
+    text-decoration: none;
+    color:black;
+    margin-left: 7px;
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-line{
+    display: flex;
+    align-items:center;
+    justify-content: right;
+    right:0;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(196, 216, 200, 1);
+    padding: 9px;
+}
+.header_text{
+
+    color:black;
+    text-decoration:none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-right: 15px;
+
+
+}
+.user_pic{
+    position: relative;
+    top: 8px;
+    margin-right: 10px;
+}
+
+.timer_container{
+    position: absolute;
+    margin-bottom: 60%;
+    left: 28%;
+    /* по вид */
+    width: min(42.5 rem,100%);
+    margin-inline:auto;
+    padding-inline:2rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+:root{
+    font-size: 70%;
+
+    --color-primary: rgba(251, 251, 247, 1)
+    --color-secondary: rgba(209, 227, 212, 1);
+    --color-font: black;
+
+    --color-shadow: rgba(187, 206, 191, 1);
+    
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+i{
+    font-size: 3.2rem;
+}
+h1{
+    font-size: 3.2rem;
+}
+section{
+    display:flex;
+    align-items:center;
+    height:100%;
+}
+.painel{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    width:20rem;
+    margin-block:5rem;
+    padding:1rem;
+    border-radius:10rem;
+}
+
+
+
+
+
+table{
+	width: 100%;
+	border-collapse:collapse;
+	height: auto;
+    background-color: rgba(196, 216, 200, 1);
+   
+} 
+
+
+
+
+
+tbody tr:hover {
+    background-color: rgba(187, 206, 191, 1); /* цвет фона при наведении */
+}
+
+table td {
+	min-height:35px;
+	width: 30px;
+	height: 35px;
+    font-size: 1.5em;
+    
+ }
+
+
+.table-container {
+    position: absolute;
+    top: 35%; /* Отступ от начала экрана */
+    left: 50%;
+    min-width: 700px;
+    max-width: 100%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.task-table {
+    max-height: 44vh;
+    overflow-y: auto;
+    border-radius: 30px;
+    /* border: solid 5px;
+    border-color: rgba(187, 206, 191, 1); */
+}
+.task-table td{
+    padding: 5px;
+    padding-left: 15px;
+}
+
+
+thead td{
+    padding: 30px;
+}
+
+
+
+.task-table tr{
+    border-bottom: solid;
+    border-radius: 30px;
+    border-collapse:collapse;
+    border-color:rgba(187, 206, 191, 1);
+    width: 100%;
+    
+}
+#tick{
+    width: 30px;
+}
+#complete-column{
+    padding-left: 7%;
+}
+
+#complete-button{
+    background-color: transparent;
+    cursor: pointer;
+    border-color: transparent;
+
+}
+
+
+/* popup-window */
+
+
+.popup-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 50%; /* Максимальная ширина */
+    text-align: center;
+    background-color: rgba(196, 216, 200, 0.96);
+    border-radius: 30px;
+    border-color: rgba(187, 206, 191, 1);
+}
+
+.popup-content form{
+    justify-content: space-between;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.inputbox{
+    display: flex;
+    margin-top: 1%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.inputbox input{
+    background-color:  rgba(187, 206, 191, 1);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    max-width: 25%;
+}
+
+.inputbox input::placeholder{
+    color: rgb(122, 134, 115)
+}
+
+.inputbox input:hover{
+    background-color: rgb(178, 193, 181);
+}
+
+.inputbox label{
+    font-size: 24px;
+    margin-right: 10%;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+.popup-content button{
+    border-radius: 30px;
+    background-color:rgba(187, 206, 191, 1);
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+button:hover{
+    background-color: rgb(178, 193, 181);
+}
+
+.popup-content h1{
+    margin-bottom: 4%;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Уменьшите поля ввода, чтобы адаптировать стили */
+input[type=text], input[type=email], textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
