@@ -12,7 +12,7 @@ using Timetracker.Data;
 namespace Timetracker.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240512123550_Initial")]
+    [Migration("20240519090800_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -166,6 +166,9 @@ namespace Timetracker.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<int>("CompletedTasks")
+                        .HasColumnType("int");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -200,6 +203,9 @@ namespace Timetracker.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<int>("RestTime")
+                        .HasColumnType("int");
+
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -209,6 +215,9 @@ namespace Timetracker.Migrations
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
+
+                    b.Property<int>("WorkTime")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
