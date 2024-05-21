@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <div class="task_add">
+    <div class="task_add" onclick="openPopup()">
         <a class="task_text" href = "#" >Добавление задачи</a>
         <a class="task_pic" href="#"><img src="Graphic_Files/plus.png" alt=""></a>
     </div>
@@ -129,6 +129,46 @@
         </div>
     </div>
     
+    
+    <div class="popup-content" id = "popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h1>Новая задача</h1>
+        <div class="inputbox">
+            <label for="time">Название</label>
+            <input type="text" id = 'task-name' placeholder="до 20 символов">
+        </div>
+
+        <div class="inputbox">
+            <label for="importance">Значимость</label>
+            <input type="text" id='task-importance'>
+        </div>
+        <div class="inputbox">
+            <label for="deadline">Дедлайн</label>
+            <input type="text" id="task-deadline">
+        </div>
+        
+        <button onclick="addTask()">Добавить Задачу</button>
+    </div>
+
+    <div class="popup-content" id = "popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h1>Новая задача</h1>
+        <div class="inputbox">
+            <label for="time">Название</label>
+            <input type="text" id = 'task-name' placeholder="до 20 символов">
+        </div>
+
+        <div class="inputbox">
+            <label for="importance">Значимость</label>
+            <input type="text" id='task-importance'>
+        </div>
+        <div class="inputbox">
+            <label for="deadline">Дедлайн</label>
+            <input type="text" id="task-deadline">
+        </div>
+        
+        <button onclick="addTask()">Добавить Задачу</button>
+    </div>
 
     <script src="./script.js"></script>
     

@@ -354,3 +354,100 @@ section {
     border-radius: 4px;
     text-align: center;
 }
+
+
+.popup-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 50%; /* Максимальная ширина */
+    text-align: center;
+    background-color: rgba(196, 216, 200, 0.96);
+    border-radius: 30px;
+    border-color: rgba(187, 206, 191, 1);
+}
+
+.popup-content form{
+    justify-content: space-between;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.inputbox{
+    display: flex;
+    margin-top: 1%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.inputbox input{
+    background-color:  rgba(187, 206, 191, 1);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    max-width: 25%;
+}
+
+.inputbox input::placeholder{
+    color: rgb(122, 134, 115)
+}
+
+.inputbox input:hover{
+    background-color: rgb(178, 193, 181);
+}
+
+.inputbox label{
+    font-size: 24px;
+    margin-right: 10%;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+.popup-content button{
+    border-radius: 30px;
+    background-color:rgba(187, 206, 191, 1);
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.popup-content button:hover{
+    background-color: rgb(178, 193, 181);
+}
+
+.popup-content h1{
+    margin-bottom: 4%;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Уменьшите поля ввода, чтобы адаптировать стили */
+input[type=text], input[type=email], textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
