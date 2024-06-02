@@ -1,0 +1,53 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Главная страница</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+
+       
+            <div class="header-line">
+
+            
+                <div class="nav">
+                    <a type ="button" class="button" style="text-decoration:none" asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData[" ReturnUrl"]">
+                        Войти</a>
+                 </div>
+
+                <div class="btn">
+                    <a type ="button" class="button" style="text-decoration:none" asp-controller="Account" asp-action="Register" asp-route-returnurl="@ViewData[" ReturnUrl"]">Регистрация</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="right-box">
+        <div class="logo">
+            <img src = "~/images/timetracker_logo.png">
+        </div>
+        <div class="text">
+            <div class="upper-text"><p>Откройте для себя новый уровень организации</p></div>
+            <div class="mid-text">
+                <span>Интуитивно понятый интерфейс и персонализированные планы помогут 
+                    вам эффективно управлять временем и освободить часы для самого важного.</span>
+    
+                    <p>Зарегистрируйтесь сегодня и начните планировать лучше с нашим приложением!</p>
+            </div>
+            
+        </div>
+        <a type ="button" class="button2" style="text-decoration:none" asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData[" ReturnUrl"]">Войти</a>
+    </div>
+    
+
+</body>
+</html>

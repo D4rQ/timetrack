@@ -10,8 +10,7 @@ body
 {
     min-height: 100vh; 
     margin:0;
-    background-image: url(Graphic_Files/background.JPEG);
-    
+    background-image: url(../images/Graphic_Files/background.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position:center; 
@@ -203,11 +202,11 @@ section {
 }
 
 .timer_container {
-    position: absolute;
+    position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateY(-32rem);
+    transform: translateY(-48rem);
 }
 
 .painel {

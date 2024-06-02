@@ -1,0 +1,145 @@
+﻿@{
+    ViewData["Title"] = "TaskTable";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lilita+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="~/css/Task table.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+
+       
+            <div class="header-line">
+
+            
+                <div class="nav">
+                    <a class="header_text" asp-action="Profile" asp-controller="Profile">@User.Identity!.Name</a>
+                    <a class="user_pic" asp-action="Profile" asp-controller="Profile"><img src="~/images/Graphic_Files/user_pic.png" alt=""></a>
+                    <!-- <btn><a href="#">Зарегистрироваться</a></btn> -->
+                 </div>
+
+                
+            </div>
+
+        </div>
+    </div>
+
+    <div class="task_add" onclick="openPopup()">
+       
+        <a class="task_text" href = "#">Добавление задачи</a>
+        <a class="task_pic" href="#"><img src="~/images/Graphic_Files/plus.png" alt=""></a>
+    </div>
+
+
+    <div class="slidebar">
+        <ul>
+            
+            <li class= "logo">
+                <a href="#">
+                    <span class= "icon"><div class="logo"><img src="~/images/Graphic_Files/timer.png" alt=""></div></span>
+                    <div class="logo_text">Timetracker</div>   
+                </a>
+            </li>
+            <li>
+                <a asp-controller="Home" asp-action="Index" asp-route-returnurl="@ViewData[" ReturnUrl"]">
+                    <span class="icon"><img src="~/images/Graphic_Files/menu_icon.png" alt=""></span>
+                    <span class="text">Главная Страница</span>
+                </a>
+            </li>
+            <li>
+                <a asp-controller="TaskTable" asp-action="TaskTable" asp-route-returnurl="@ViewData[" ReturnUrl"]">
+                    <span class="icon"><img src="~/images/Graphic_Files/task.png" alt=""></span>
+                    <span class="text">Список задач</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class= "icon"><img src="~/images/Graphic_Files/calendar.png" alt=""></span>
+                    <span class= "text">События</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class= "icon"><img src="~/images/Graphic_Files/medal.png" alt=""></span>
+                    <span class= "text">Награды</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class= "icon"><img src="~/images/Graphic_Files/backpack.png" alt=""></span>
+                    <span class= "text">Инвентарь</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class= "icon"><img src="~/images/Graphic_Files/settings.png" alt=""></span>
+                    <span class= "text">Настройки</span>
+                </a>
+            </li>
+            <div class="bottom">
+                <li>
+                    <a href="#">
+                        <span class= "icon"><img src="~/images/Graphic_Files/exit.png" alt=""></span>
+                        <span class= "text">Выйти</span>
+                    </a>
+                </li>
+            </div>
+            
+        </ul>
+    </div>
+
+
+    <section>
+        <div class="table-container">
+            <div class="task-table">
+                <table id="tasks">
+                    <thead>
+                        <tr>
+                            <td>Название</td>
+                            <td>Уровень значимости</td>
+                            <td>Дедлайн</td>
+                            <td>Выполнение</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="popup-content" id = "popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h1>Новая задача</h1>
+        <div class="inputbox">
+            <label for="time">Название</label>
+            <input type="text" id = 'task-name' placeholder="до 20 символов">
+        </div>
+
+        <div class="inputbox">
+            <label for="importance">Значимость</label>
+            <input type="text" id='task-importance'>
+        </div>
+        <div class="inputbox">
+            <label for="deadline">Дедлайн</label>
+            <input type="text" id="task-deadline">
+        </div>
+        
+        <button onclick="addTask()">Добавить Задачу</button>
+    </div>
+
+    <script src="~/js/Task table script.js"></script>
+</body>
+</html>

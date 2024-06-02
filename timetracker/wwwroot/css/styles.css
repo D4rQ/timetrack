@@ -1,101 +1,98 @@
-body{
-    margin:0;
-    background-image: url("Graphic\ Files/background.png");
+body {
+    margin: 0;
+    background-image: url("../images/welcome_background.png");
     height: 90vh;
     background-repeat: no-repeat;
     background-size: 55%;
-    background-position:left bottom;
-
-}
-center{
-   display:none;
+    background-position: left bottom;
 }
 
-.header-line{
+center {
+    display: none;
+}
+
+.header-line {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: right;
     background-color: rgba(196, 216, 200, 1);
     padding: 7px;
 }
-.nav-item{
-    color:black;
-    text-decoration:none;
-    font-family:Arial, Helvetica, sans-serif;
+
+.nav-item {
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     margin-right: 30px;
-
 }
-.button{
-    background-color:rgba(196, 216, 200, 1);
-    color:black;
-    border:none;
+
+.button {
+    background-color: rgba(196, 216, 200, 1);
+    color: black;
+    border: none;
     padding: 5px 15px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     border-radius: 35px;
     box-shadow: 0 4px 6px 1px rgba(120, 132, 122, 1);
-    
 }
- 
 
- .logo img{
+
+.logo img {
     height: 200px;
     width: 370px;
-    display:block;
+    display: block;
     padding-left: 115px;
     /* margin-right:50px;
     margin-left: 830px; */
-    
-    
+}
 
- }
- .right-box{
-   position:absolute;
+.right-box {
+    position: absolute;
     margin-top: 80px;
-    right:0;
+    right: 0;
     margin-right: 10vh;
     margin-bottom: 500px;
     text-align: center;
-    
- }
- .text{
+}
+
+.text {
     text-align: center;
     /* margin-right: 130px; */
     margin-top: 15px;
- }
+}
 
- 
- .upper-text{
+
+.upper-text {
     font-size: 27px;
     font-family: Jost;
     line-height: 25px;
     /* margin-right: 130px;
     margin-left: 830px; */
- }
+}
 
- .mid-text{
+.mid-text {
     font-size: 20px;
     line-height: 25px;
     font-family: Jost;
-   width: 550px;
+    width: 550px;
     /* margin-right: 70px;
     margin-left: 750px; */
+}
 
- }
-
- .button2{
+.button2 {
     /* right: 400px; */
     /* margin-left: 965px; */
-    
+
     margin-top: 15px;
-    background-color:rgba(196, 216, 200, 1);
-    color:black;
-    border:none;
+    background-color: rgba(196, 216, 200, 1);
+    color: black;
+    border: none;
     padding: 8px 15px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     border-radius: 35px;
     box-shadow: 0 4px 6px 1px rgba(120, 132, 122, 1);
     font-weight: 600;
- }
+}

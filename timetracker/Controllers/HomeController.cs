@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Timetracker.Models;
+using Timetracker.ViewModels;
 
 namespace Timetracker.Controllers
 {
@@ -9,6 +11,12 @@ namespace Timetracker.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+
+        public async void AddWorkTime(int time)
+            => await AddWorkTime(new ProfileVM(), time);
+
+        public async Task AddWorkTime(ProfileVM model, int time)
+            => model.WorkTime += time;
 
         public HomeController(ILogger<HomeController> logger)
         {

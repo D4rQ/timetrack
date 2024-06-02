@@ -75,7 +75,7 @@ namespace Timetracker.Controllers
         {
             return !string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl)
                 ? Redirect(returnUrl)
-                : RedirectToAction(nameof(HomeController.Index), nameof(HomeController));
+                : RedirectToAction(nameof(HomeController.Index), "Home");
         }
     }
 }

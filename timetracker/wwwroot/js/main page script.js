@@ -61,6 +61,9 @@ function start() {
             workTitle.classList.remove('active');
             breakTitle.classList.add('active');
         } else if (workMinutes < 0) {
+            $.ajax({
+                url:'/Home/AddWorkTime'
+            })
             workMinutes = workTime - 1;
             breakCount++;
             breakTitle.classList.remove('active');

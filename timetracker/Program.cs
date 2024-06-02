@@ -47,7 +47,7 @@ namespace Timetracker
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Welcome}/{action=Welcome}/{id?}");
 
             app.Run();
         }
