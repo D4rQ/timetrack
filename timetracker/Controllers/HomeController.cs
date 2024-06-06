@@ -25,7 +25,7 @@ namespace Timetracker.Controllers
                 command.ExecuteNonQuery();
                 connection.Close();
             }
-            return Json(new {success = true});
+            return Json(new { success = true });
         }
 
         public ActionResult AddRestTime(int timeInMinutes)

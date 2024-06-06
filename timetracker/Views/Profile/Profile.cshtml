@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lilita+One&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/Profile.css">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
 </head>
@@ -97,28 +97,25 @@
         </div>
 
         <div class="statistics">
-            <p>Статистика</p>
+            <p onclick="start()">Статистика</p>
         </div>
 
         <div class="statistic-values">
             <div class="statblock">
                 <p>Часы в работе</p>
-                <div class="value">100</div>
+                <div class="value" id="work">&nbsp;</div>
             </div>
             <div class="statblock">
                 <p>Часы отдыха</p>
-                <div class="value">100</div>
+                <div class="value" id="rest">&nbsp;</div>
             </div>
             <div class="statblock">
                 <p>Выполненные задачи</p>
-                <div class="value">100</div>
+                <div class="value" id="tasks">&nbsp;</div>
             </div>
         </div>
     </div>
 
-
-
-
-    <script scr="./script.js"></script>
+    <script src="~/js/script.js"></script>
 </body>
 </html>

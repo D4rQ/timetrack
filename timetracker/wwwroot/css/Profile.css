@@ -5,17 +5,13 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body
-{
-    min-height: 100vh; 
-    margin:0;
-    background-image: url(Graphic_Files/background.png);
-    
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(/images/Profile_Graphic_Files/background.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position:center; 
-
-
+    background-position: center;
 }
 .slidebar{
     position: relative;

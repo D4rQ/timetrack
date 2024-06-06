@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JmI7YNX61vl3nM1XiXL543a9skXwnegPTP0OaqdSS6I=",
+  "Hash": "ljUF0Jt4201yJUpYJDminuOXsVN7w9kuyEiwLfUNZYw=",
   "Source": "Timetracker",
   "BasePath": "_content/Timetracker",
   "Mode": "Default",
@@ -1364,6 +1364,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\main page script.js"
+    },
+    {
+      "Identity": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\wwwroot\\js\\script.js",
+      "SourceId": "Timetracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\wwwroot\\",
+      "BasePath": "_content/Timetracker",
+      "RelativePath": "js/script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\script.js"
     },
     {
       "Identity": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\wwwroot\\js\\site.js",

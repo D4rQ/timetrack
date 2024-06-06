@@ -285,6 +285,10 @@
       "PackagePath": "staticwebassets\\js\\main page script.js"
     },
     {
+      "Id": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
       "Id": "C:\\Users\\lagod\\projects\\timetrack\\timetracker\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

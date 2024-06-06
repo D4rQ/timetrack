@@ -1,0 +1,452 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    min-height: 100vh; 
+    margin:0;
+    background-image: url(../images/Graphic_Files/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:center; 
+
+
+}
+.slidebar{
+    position: relative;
+    width: 60px;
+    height: 100vh;
+    background: rgba(196, 216, 200, 1);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.slidebar:hover{
+    width: 300px;
+}
+.slidebar ul{
+    position: relative;
+    height: 100vh;
+}
+
+.slidebar ul li{
+    list-style: none;
+}
+
+.slidebar ul li:hover{
+background: rgba(187, 206, 191, 1);
+}
+.slidebar ul li a{
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.slidebar ul li a .icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    color:black;
+}
+.slidebar ul li a .text{
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items:center;
+    font-size: 1.5em;
+    color:black;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.logo_text{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 500;
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items:center;
+    font-size: 1.7em;
+    color:black;
+    letter-spacing: 0.05em;
+    /* margin-bottom: 50px; */
+}
+.slidebar ul li.logo:hover{
+    background: rgba(196, 216, 200, 1);
+}
+
+.slidebar ul li.logo{
+    margin-bottom: 40px;
+}
+.bottom{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+
+}
+.task_add{
+    margin-top: 120px;
+    display: flex;
+    align-items:center; 
+    justify-content: center;
+    
+    width: 50%;
+    margin-left: 25%;
+    position: absolute;
+    background-color: rgba(196, 216, 200, 1);
+    padding: 9px;
+    border-radius: 25px;
+}
+.task_text{
+    text-decoration: none;
+    color:black;
+    margin-left: 7px;
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-line{
+    display: flex;
+    align-items:center;
+    justify-content: right;
+    right:0;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(196, 216, 200, 1);
+    padding: 9px;
+}
+.header_text{
+
+    color:black;
+    text-decoration:none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-right: 15px;
+
+
+}
+.user_pic{
+    position: relative;
+    top: 8px;
+    margin-right: 10px;
+}
+
+/* .timer_container{
+    position: absolute;
+    margin-bottom: 52%;
+    z-index: 1;
+    left: 38%;
+    /* по вид */
+    /* width: min(42.5 rem,100%);
+    margin-inline:auto;
+    padding-inline:2rem;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+} */ 
+:root{
+    font-size: 70%;
+
+    --color-primary: rgba(251, 251, 247, 1)
+    --color-font: black;
+    --color-shadow: rgba(187, 206, 191, 1);
+    --color-secondary:rgba(209, 227, 212, 1);
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+
+
+.timer_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+.timer_container p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+i {
+    font-size: 3.2rem;
+}
+
+/* начните работать уже сейчас */
+h1 { 
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:0;
+    
+}
+
+.timer_container {
+    position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-48rem);
+}
+
+.painel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    width: 20rem;
+    margin-block: 5rem;
+    padding: 1.5rem;
+    border-radius: 10rem;
+    -webkit-box-shadow: 0px 0px 15px 10px var(--color-shadow); 
+    box-shadow: 0px 0px 5px 10px var(--color-shadow);
+}
+
+.painel p {
+    opacity: .8;
+    transition: 1s ease-in;
+}
+
+.painel p.active {
+    opacity: 1;
+    color: rgba(251, 177, 36, 1);   
+} 
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23rem;
+    height: 23rem;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px 10px var(--color-shadow); 
+    box-shadow: 0px 0px 5px 10px var(--color-shadow);
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21rem;
+    height: 21rem;
+    border-radius: 50%;
+    background-color: rgba(251, 177, 36, 0.5);
+    position: relative;
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    background-color: rgba(251, 251, 247, 1);
+}
+
+.time {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.time p {
+    font-size: 5rem;
+}
+
+.time p:nth-of-type(2) {
+    position: relative;
+    top: -.5rem;
+    margin-inline: 1rem;
+}
+
+.controls {
+    margin-top: 2rem;
+}
+
+.controls button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.controls img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.controls #reset {
+    display: none;
+}
+
+
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d2e8e6;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.input-group label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.input-group input[type="text"] {
+    width: 80px; /* Уменьшенная ширина */
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+.container_input {
+    display: flex;
+    position: absolute; /* Меняем на absolute для позиционирования относительно окна браузера */
+    top: 85%;        /* Позиция по вертикали на 50% от начала окна */
+    left: 50%;       /* Позиция по горизонтали на 50% от начала окна */
+    transform: translate(-50%, -50%);
+    gap: 210px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(196, 216, 200, 1);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.input-group label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.input-group input[type="text"] {
+    width: 70px; /* Уменьшенная ширина */
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+.popup-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 50%; /* Максимальная ширина */
+    text-align: center;
+    background-color: rgba(196, 216, 200, 0.96);
+    border-radius: 30px;
+    border-color: rgba(187, 206, 191, 1);
+}
+
+.popup-content form{
+    justify-content: space-between;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.inputbox{
+    display: flex;
+    margin-top: 1%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.inputbox input{
+    background-color:  rgba(187, 206, 191, 1);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    max-width: 25%;
+}
+
+.inputbox input::placeholder{
+    color: rgb(122, 134, 115)
+}
+
+.inputbox input:hover{
+    background-color: rgb(178, 193, 181);
+}
+
+.inputbox label{
+    font-size: 24px;
+    margin-right: 10%;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+.popup-content button{
+    border-radius: 30px;
+    background-color:rgba(187, 206, 191, 1);
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.popup-content button:hover{
+    background-color: rgb(178, 193, 181);
+}
+
+.popup-content h1{
+    margin-bottom: 4%;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Уменьшите поля ввода, чтобы адаптировать стили */
+input[type=text], input[type=email], textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
