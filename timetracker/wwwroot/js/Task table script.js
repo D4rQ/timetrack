@@ -21,7 +21,7 @@ function addTask(){
    // Добавляем кнопку удаления в ячейку
     var completeButton = document.createElement("button");
     var img = document.createElement("img");
-    img.src = "Graphic_Files/check.png"; // Указываем путь к вашему изображению
+    img.src = "https://cdn-icons-png.flaticon.com/512/1055/1055183.png"; // Указываем путь к вашему изображению
     img.alt = "Complete";
     img.id = "tick";
     completeButton.appendChild(img);

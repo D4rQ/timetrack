@@ -60,14 +60,37 @@ function start() {
             breakCount++;
             workTitle.classList.remove('active');
             breakTitle.classList.add('active');
-        } else if (workMinutes < 0) {
+
             $.ajax({
-                url:'/Home/AddWorkTime'
-            })
+                type: "POST",
+                url: "/Home/AddWorkTime", // Замените на соответствующий контроллер и действие
+                data: { timeInMinutes: workTime },
+                success: function (response) {
+                    alert(11);
+                },
+                error: function (xhr, status, error) {
+                    // Обработка ошибки при отправке данных
+                    console.error("Ошибка при отправке времени на сервер:", error);
+                }
+            });
+        } else if (workMinutes < 0) {
             workMinutes = workTime - 1;
             breakCount++;
             breakTitle.classList.remove('active');
             workTitle.classList.add('active');
+
+            $.ajax({
+                type: "POST",
+                url: "/Home/AddRestTime", // Замените на соответствующий контроллер и действие
+                data: { timeInMinutes: breakTime },
+                success: function (response) {
+                    alert(11);
+                },
+                error: function (xhr, status, error) {
+                    // Обработка ошибки при отправке данных
+                    console.error("Ошибка при отправке времени на сервер:", error);
+                }
+            });
         }
     };
     intervalId = setInterval(timerFunction, 1000);
@@ -96,7 +119,7 @@ function addTask(){
    // Добавляем кнопку удаления в ячейку
     var completeButton = document.createElement("button");
     var img = document.createElement("img");
-    img.src = "Graphic_Files/check.png"; // Указываем путь к вашему изображению
+    img.src = "~/images/Task_Table_Graphic_Files/check.png"; // Указываем путь к вашему изображению
     img.alt = "Complete";
     img.id = "tick";
     completeButton.appendChild(img);
