@@ -36,7 +36,10 @@ namespace Timetracker.Controllers
             using (var connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                var command = new SqlCommand($"DELETE FROM AspNetTasks WHERE UserName = '{User.Identity!.Name}' AND TaskName = N'{taskName}' AND TaskPriority = {taskPriority} AND Deadline = '{deadline}'", connection).ExecuteNonQuery();
+                new SqlCommand($"DELETE FROM AspNetTasks WHERE UserName = '{User.Identity!.Name}' AND TaskName = N'{taskName}' AND TaskPriority = {taskPriority} AND Deadline = '{deadline}'", connection).ExecuteNonQuery();
+                var currentTasks = int.Parse(new SqlCommand("Select CompletedTasks FROM AspNetUsers Where UserName = \'" + User.Identity!.Name!.ToString() + "\'", connection).ExecuteScalar().ToString()!);
+                currentTasks++;
+                var command = new SqlCommand("UPDATE AspNetUsers SET CompletedTasks = " + currentTasks.ToString() + "Where UserName = \'" + User.Identity.Name + "\'", connection);
                 connection.Close();
             }
             return Json(new { success = cond });
