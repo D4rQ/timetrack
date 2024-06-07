@@ -84,7 +84,7 @@ function start() {
                 url: "/Home/AddRestTime", // Замените на соответствующий контроллер и действие
                 data: { timeInMinutes: breakTime },
                 success: function (response) {
-                    alert(response.success);
+                    //alert(response.success);
                 },
                 error: function (xhr, status, error) {
                     // Обработка ошибки при отправке данных

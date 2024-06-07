@@ -9,7 +9,7 @@ body
 {
     min-height: 100vh; 
     margin:0;
-    background-image: url(Graphic_Files/background.png);
+    background-image: url(../images/Task_Table_Graphic_Files/background.png);
     
     background-repeat: no-repeat;
     background-size: 100%;

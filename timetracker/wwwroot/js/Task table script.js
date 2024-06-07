@@ -26,10 +26,45 @@ function addTask(){
     img.id = "tick";
     completeButton.appendChild(img);
     completeButton.id = "complete-button"; // Добавляем id "complete-button"
-    completeButton.onclick = function() {
+
+    jQuery.ajax({
+        type: "POST",
+        url: "/TaskTable/AddTask", 
+        data: {
+            taskName: cell1.innerHTML,
+            taskPriority: cell2.innerHTML,
+            deadline: cell3.innerHTML
+        },
+        success: function (response) {
+            
+        },
+        error: function (xhr, status, error) {
+            console.error("Ошибка при отправке:", error);
+        }
+    });
+
+
+    completeButton.onclick = function () {
         var row = this.parentNode.parentNode;
+        jQuery.ajax({
+            type: "POST",
+            url: "/TaskTable/CompleteTask",
+            data: {
+                taskName: cell1.innerHTML,
+                taskPriority: cell2.innerHTML,
+                deadline: cell3.innerHTML
+            },
+            success: function (response) {
+
+            },
+            error: function (xhr, status, error) {
+                console.error("Ошибка при отправке:", error);
+            }
+        });
+
         row.parentNode.removeChild(row);
-    };
+    }
+
     cell4.appendChild(completeButton);
     cell4.id = "complete-column";
 }

@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lilita+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="~/css/Task table.css">
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
 </head>
@@ -90,8 +90,10 @@
             <div class="bottom">
                 <li>
                     <a href="#">
-                        <span class= "icon"><img src="~/images/Graphic_Files/exit.png" alt=""></span>
-                        <span class= "text">Выйти</span>
+                    <a asp-action="Logout" asp-controller="Account">
+                        <span class="icon"><img src="~/images/Graphic_Files/exit.png"></span>
+                        <span class="text">Выйти</span>
+                    </a>
                     </a>
                 </li>
             </div>
